@@ -2,6 +2,13 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
+This project uses:
+*Angular CLI
+*Font Awesome
+
+## Getting Started
+Run `npm install` to download all the modules related to the project, do this just it is the first time you try to deploy the project, if you don't have angular cli you should visit [angular-cli](https://cli.angular.io/)
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
