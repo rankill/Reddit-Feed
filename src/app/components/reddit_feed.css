@@ -1,0 +1,101 @@
+/*
+* === CSS related to the main reddit feeder ===
+*/
+
+
+/*
+* — Main Container —
+*/
+.container {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 22px auto;
+  width: 640px;
+}
+
+.no-padding-col
+{
+  padding: 0px 0px 0px 0px;
+}
+
+.reddit {
+  border-bottom: #123456 1px solid;
+  border: #e1e8ed 1px solid;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-reddit{
+  padding: 0px 4px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.reddit-score{
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.reddit-data-selector{
+  text-align: center;
+  line-height: 20px;
+  padding: 12px 0px 8px;
+  margin-left: 22%;
+}
+
+.reddit-selector-element{
+  text-align: center;
+  line-height: 20px;
+  padding: 23px 10px 8px;
+  width: 20%;
+  margin: 0;
+}
+
+.reddit-selector-reload{
+  text-align: center;
+  line-height: 20px;
+  padding: 23px 10px 8px;
+  width: 20%;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 12px 0px 8px;
+  margin: 0;
+  color: #123456;
+  text-align: left;
+}
+
+.title-9gag{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 12px 0px 8px;
+  margin: 0;
+  color: #123456;
+  text-align: center;
+}
+
+.title-tagline{
+  color: #888;
+}
+
+/*
+* — Img class edited for main reddit feeder, works for header and 9gag images —
+*/
+img {
+  width: 610px;
+  height: auto;
+  border-bottom: #123456 1px solid;
+  border: #e1e8ed 1px solid;
+  border-radius: 5px;
+}

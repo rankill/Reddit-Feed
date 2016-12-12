@@ -1,0 +1,39 @@
+<div class='container'>  
+  <img src="app/images/reddit.jpg" title="¡Welcome to our reddit feed!"/>
+  <div class='row reddit-data-selector'>
+      <div class='col-md-4 no-padding-col'>
+        <h3 >Feeds from:</h3>
+      </div>
+      <div class='col-md-3 reddit-selector-element'>
+        <select [ngModel]="selectedObject | json" (ngModelChange)="updateSelectedValue($event)">
+          <option *ngFor="let o of objArray" [value]="o | json" >{{o.name}}</option>
+        </select>
+      </div>
+      <div class='col-md-2 reddit-selector-reload'>
+        <a class="btn btn-default btn-reddit" href="#" (click)="reloadList()">
+          <i class="fa fa-refresh fa-sx" aria-hidden="true">
+          </i>
+           Recargar
+        </a>
+        
+      </div>
+  </div>
+  <div id='contNews' [hidden]="selectedView === '9gag'">
+    <div class='reddit row' *ngFor="let reddit of _reddits$ | async">
+      <div class='col-md-2'><h3 class='reddit-score' title="Score on reddit">{{reddit.score}}</h3></div>
+      <div class='col-md-10'><h5 class='title'><a href="{{reddit.url}}">{{reddit.title}}</a></h5>
+      <h5 class='title-tagline'>
+      	<a class='title-tagline' href="http://www.reddit.com{{reddit.permalink}}">Check it on Reddit</a>
+      	- Post by:
+      	<a class='title-tagline' href="http://www.reddit.com{{reddit.author}}">{{reddit.author}}</a>
+      </h5>
+      </div>
+    </div>
+  </div>
+  <div id='contNews' [hidden]="selectedView === 'Noticias'">
+      <div class='reddit' *ngFor="let reddit of _reddits$ | async">
+        <h5 class='title-9gag'><a href="http://www.reddit.com{{reddit.permalink}}">{{reddit.title}}</a></h5>
+        <img src={{reddit.imageUrl}}/>
+      </div>
+  </div>
+</div>
