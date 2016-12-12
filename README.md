@@ -1,7 +1,13 @@
-<<<<<<< HEAD
-# RedditAngular2
+# RedditAngular2 (Reddit Feed)
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
+
+This project uses:
+*Angular CLI
+*Font Awesome
+
+## Getting Started
+Run `npm install` to download all the modules related to the project, do this just it is the first time you try to deploy the project, if you don't have angular cli you should visit [angular-cli](https://cli.angular.io/)
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -32,4 +38,4 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # Reddit-Feed
->>>>>>> Reddit_Feed/master
+
