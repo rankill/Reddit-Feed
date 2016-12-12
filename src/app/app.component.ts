@@ -37,7 +37,7 @@ export class AppComponent {
   private _redditDataUrl: string = 'https://www.reddit.com/r/news.json'; /*Var that handles the json*/
 
   constructor(private http: Http) {
-    this.objArray = [{name: '9gag', value: 1}, {name: 'Noticias', value: 1}];
+    this.objArray = [{name: '9gag', value: 1}, {name: 'News', value: 1}];
     this.selectedObject = this.objArray[1];
     this.selectedView = this.selectedObject.name;
    }
