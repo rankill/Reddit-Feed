@@ -30,7 +30,7 @@
       </div>
     </div>
   </div>
-  <div id='contNews' [hidden]="selectedView === 'Noticias'">
+  <div id='contNews' [hidden]="selectedView === 'News'">
       <div class='reddit' *ngFor="let reddit of _reddits$ | async">
         <h5 class='title-9gag'><a href="http://www.reddit.com{{reddit.permalink}}">{{reddit.title}}</a></h5>
         <img src={{reddit.imageUrl}}/>
