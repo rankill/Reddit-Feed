@@ -1,4 +1,4 @@
-<div class='container'>  
+<div class='container'>
   <img src="app/images/reddit.jpg" title="¡Welcome to our reddit feed!"/>
   <div class='row reddit-data-selector'>
       <div class='col-md-4 no-padding-col'>
@@ -15,13 +15,16 @@
           </i>
            Reload
         </a>
-        
+
       </div>
   </div>
   <div id='contNews' [hidden]="selectedView === '9gag'">
     <div class='reddit row' *ngFor="let reddit of _reddits$ | async">
-      <div class='col-md-2'><h3 class='reddit-score' title="Score on reddit">{{reddit.score}}</h3></div>
-      <div class='col-md-10'><h5 class='title'><a href="{{reddit.url}}">{{reddit.title}}</a></h5>
+      <!--  Rankill score class -->
+      <div class='col-md-2 score'><h3 class='reddit-score' title="Score on reddit">{{reddit.score}}</h3></div>
+
+      <!--  Rankill title class -->
+      <div class='col-md-10 title'><h5 class='title'><a href="{{reddit.url}}">{{reddit.title}}</a></h5>
       <h5 class='title-tagline'>
       	<a class='title-tagline' href="http://www.reddit.com{{reddit.permalink}}">Check it on Reddit</a>
       	- Post by:

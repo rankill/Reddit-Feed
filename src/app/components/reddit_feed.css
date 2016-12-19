@@ -9,7 +9,12 @@
 .container {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 22px auto;
-  width: 640px;
+  /*width: 640px;*/
+
+
+  /* Rankill */
+  max-width: 640px;
+  width: 100%;
 }
 
 .no-padding-col
@@ -22,6 +27,14 @@
   border: #e1e8ed 1px solid;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
+
+  /*Rankill*/
+  margin: 25px auto;
+  padding: 0 14px;
+}
+
+.reddit score {
+  width: 100%
 }
 
 .btn-reddit{
@@ -34,13 +47,29 @@
   text-align: center;
   padding-top: 15%;
   padding-bottom: 15%;
+
+  /*Rankill*/
+  padding: 0;
+  margin: 15px auto;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+/* breakdown when */
+@media screen and (min-width:992px) {
+  .reddit-score {
+    border: none;
+  }
 }
 
 .reddit-data-selector{
   text-align: center;
   line-height: 20px;
   padding: 12px 0px 8px;
-  margin-left: 22%;
+  /*margin-left: 22%;*/
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .reddit-selector-element{
@@ -66,10 +95,13 @@
   font-variant: normal;
   font-weight: normal;
   line-height: 20px;
-  padding: 12px 0px 8px;
-  margin: 0;
+  /*padding: 12px 0px 8px;*/
+  /*margin: 0;*/
   color: #123456;
   text-align: left;
+
+  /*Rankill*/
+  padding: 0px 0px 8px;
 }
 
 .title-9gag{
@@ -93,8 +125,18 @@
 * — Img class edited for main reddit feeder, works for header and 9gag images —
 */
 img {
-  width: 610px;
+  /*width: 610px;*/
+
+
+  /* Rankill */
+  width: 100%;
+  max-width: 610px;
+
   height: auto;
+  min-height: 150px;
+
+  margin: auto;
+
   border-bottom: #123456 1px solid;
   border: #e1e8ed 1px solid;
   border-radius: 5px;
